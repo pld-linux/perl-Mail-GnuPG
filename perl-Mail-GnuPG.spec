@@ -9,7 +9,7 @@ Summary:	Mail::GnuPG - Process email with GPG.
 #Summary(pl):	
 Name:		perl-Mail-GnuPG
 Version:	0.08
-Release:	1
+Release:	2
 License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,14 +17,10 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(File::Spec)
-BuildRequires:	perl(File::Temp)
-BuildRequires:	perl(GnuPG::Interface)
-BuildRequires:	perl(IO::Handle)
-BuildRequires:	perl(MIME::Entity)
-BuildRequires:	perl(MIME::Parser)
-BuildRequires:	perl(Mail::Address)
-BuildRequires:	perl(Test::More)
+BuildRequires:	perl-GnuPG-Interface
+BuildRequires:	perl-MailTools
+BuildRequires:	perl-MIME-tools
+BuildRequires:	perl-Test-Simple
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
