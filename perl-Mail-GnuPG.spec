@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Mail
 %define	pnam	GnuPG
-Summary:	Mail::GnuPG - Process email with GPG.
-#Summary(pl):	
+Summary:	Mail::GnuPG - Process email with GPG
+Summary(pl):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy u¿yciu GPG
 Name:		perl-Mail-GnuPG
 Version:	0.08
 Release:	2
@@ -29,8 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Use GnuPG::Interface to process or create PGP signed or encrypted
 email.
 
-# %description -l pl
-# TODO
+%description -l pl
+GnuPG::Interface s³u¿y do przetwarzania i tworzenia podpisanej lub
+zaszyfrowanej PGP poczty elektronicznej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
