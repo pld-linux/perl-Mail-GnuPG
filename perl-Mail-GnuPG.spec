@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Mail
-%define	pnam	GnuPG
+%define		pdir	Mail
+%define		pnam	GnuPG
 Summary:	Mail::GnuPG - Process email with GPG
 Summary(pl):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy u¿yciu GPG
 Name:		perl-Mail-GnuPG
