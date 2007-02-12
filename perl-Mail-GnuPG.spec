@@ -6,7 +6,7 @@
 %define		pdir	Mail
 %define		pnam	GnuPG
 Summary:	Mail::GnuPG - Process email with GPG
-Summary(pl):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy uøyciu GPG
+Summary(pl.UTF-8):   Mail::GnuPG - przetwarzanie poczty elektronicznej przy u≈ºyciu GPG
 Name:		perl-Mail-GnuPG
 Version:	0.08
 Release:	2
@@ -29,8 +29,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Use GnuPG::Interface to process or create PGP signed or encrypted
 email.
 
-%description -l pl
-GnuPG::Interface s≥uøy do przetwarzania i tworzenia podpisanej lub
+%description -l pl.UTF-8
+GnuPG::Interface s≈Çu≈ºy do przetwarzania i tworzenia podpisanej lub
 zaszyfrowanej PGP poczty elektronicznej.
 
 %prep
