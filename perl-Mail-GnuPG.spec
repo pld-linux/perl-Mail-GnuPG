@@ -6,7 +6,7 @@
 %define		pdir	Mail
 %define		pnam	GnuPG
 Summary:	Mail::GnuPG - Process email with GPG
-Summary(pl.UTF-8):   Mail::GnuPG - przetwarzanie poczty elektronicznej przy użyciu GPG
+Summary(pl.UTF-8):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy użyciu GPG
 Name:		perl-Mail-GnuPG
 Version:	0.08
 Release:	2
