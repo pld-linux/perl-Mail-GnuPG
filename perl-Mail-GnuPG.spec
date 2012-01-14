@@ -8,12 +8,12 @@
 Summary:	Mail::GnuPG - Process email with GPG
 Summary(pl.UTF-8):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy użyciu GPG
 Name:		perl-Mail-GnuPG
-Version:	0.15
+Version:	0.17
 Release:	1
 License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Mail/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7f18a7af0d8998a3f362e8e12abe16a2
+# Source0-md5:	b6c94307bcac31a4f6c7a47aa8065bd9
 URL:		http://search.cpan.org/dist/Mail-GnuPG/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -38,17 +38,18 @@ zaszyfrowanej PGP poczty elektronicznej.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	installdirs=vendor \
+	destdir=$RPM_BUILD_ROOT
 
-%{?with_tests:%{__make} test}
+./Build
+
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
