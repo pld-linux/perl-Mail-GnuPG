@@ -8,12 +8,12 @@
 Summary:	Mail::GnuPG - Process email with GPG
 Summary(pl.UTF-8):	Mail::GnuPG - przetwarzanie poczty elektronicznej przy użyciu GPG
 Name:		perl-Mail-GnuPG
-Version:	0.17
+Version:	0.23
 Release:	1
 License:	GPL v2 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Mail/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b6c94307bcac31a4f6c7a47aa8065bd9
+# Source0-md5:	9661f16109d957720a924fa58ed8b09d
 URL:		http://search.cpan.org/dist/Mail-GnuPG/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
